@@ -1,0 +1,435 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Randolphe KM - Développeur Web &amp; et Expert IA</title>
+<meta name="description" content="Page à propos de Randolphe KM, spécialiste en contenu digital et développement web. Découvrez mon parcours et mes services.">
+<meta name="keywords" content="Randolphe KM, contenu digital, développement web, freelance, expertise">
+<meta name="description" content="Portfolio de Randolphe KM, développeur IA &amp; Web Frontend spécialisé dans la création de sites web modernes et l'intégration d'intelligence artificielle.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+<style>
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #9b59b6;
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --hover-color: #2980b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  
+    width: 90%; /* Ajuste la largeur selon l'espace désiré */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('R.jpeg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease 0.2s;
+  animation-fill-mode: both;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1s ease 0.4s;
+  animation-fill-mode: both;
+  text-align: center;
+}
+.btn a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease 0.4s;
+            animation-fill-mode: both;
+            margin: 10px;
+        }
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item i {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-info {
+  transform: translateY(0);
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonial-item {
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.testimonial-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#contact {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">KM</div>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Randolphe KM</h1>
+      <p>Développeur IA &amp; Web Frontend | Créateur de Contenu | Gestionnaire de Pages</p>
+      <a href="#contact" class="btn">Contactez-moi</a>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>À propos de moi</h2>
+    <p>Je suis Randolphe KM, un développeur passionné par l'IA et le web frontend. Mon objectif est de créer des expériences numériques exceptionnelles et d'aider les entreprises à prospérer dans l'ère du numérique et de l'intelligence artificielle.</p>
+    <a href="C:\Users\ADMIN\Desktop\porte folio\A-Propos.html" class="btn">Plus sur moi</a>
+  </section>
+
+  <section id="services" class="container">
+    <h2>Mes Services</h2>
+    <div class="services">
+      <div class="service-item">
+        <i class="fas fa-robot"></i>
+        <h3>Développement IA</h3>
+        <p>Intégration de solutions d'intelligence artificielle innovantes</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-code"></i>
+        <h3>Développement Web Frontend</h3>
+        <p>Création de sites web modernes, responsifs et performants</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-pen-fancy"></i>
+        <h3>Création de Contenu</h3>
+        <p>Rédaction et optimisation de contenu engageant pour le web</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-tasks"></i>
+        <h3>Gestion de Pages</h3>
+        <p>Administration et optimisation de pages web et médias sociaux</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Mes Projets</h2>
+    <div class="projects">
+      <div class="project-item">
+        <img src="C:\Users\ADMIN\Desktop\porte folio\projet1.avif" alt="Projet d'assistant virtuel IA" width="400" height="300">
+        <div class="project-info">
+          <h3>Assistant Virtuel IA</h3>
+          <p>Développement d'un assistant virtuel basé sur l'IA pour améliorer le service client</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="C:\Users\ADMIN\Desktop\porte folio\projet2.avif" alt="Site web e-commerce" width="400" height="300">
+        <div class="project-info">
+          <h3>Site Web E-commerce</h3>
+          <p>Création d'une plateforme e-commerce moderne et performante</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="C:\Users\ADMIN\Desktop\porte folio\projet3.avif" alt="Gestion de contenu pour blog" width="400" height="300">
+        <div class="project-info">
+          <h3>Gestion de Contenu</h3>
+          <p>Stratégie et création de contenu pour un blog à fort trafic</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container">
+    <h2>Témoignages</h2>
+    <div class="testimonials">
+      <div class="testimonial-item">
+        <img src="C:\Users\ADMIN\Desktop\porte folio\avatar-femme.jpeg" alt="Portrait de Claire M." width="80" height="80">
+        <p>"L'expertise de Randolphe en IA et en développement web a considérablement amélioré notre efficacité opérationnelle. Son travail est vraiment impressionnant !"</p>
+        <p><strong>Claire M., Directrice des Opérations chez AITech</strong></p>
+      </div>
+      <div class="testimonial-item">
+        <img src="C:\Users\ADMIN\Desktop\porte folio\avatar-homme.jpeg" alt="Portrait de Marc L." width="80" height="80">
+        <p>"Randolphe a su capturer l'essence de notre marque et la traduire en une présence web captivante. Son approche créative et sa maîtrise technique sont remarquables."</p>
+        <p><strong>Marc L., Fondateur de WebInnovate</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Me Contacter</h2>
+    <div id="contactOptions">
+        <div class="btn" >
+            <a href="https://wa.me/+22957703972" target="_blank">WhatsApp</a>
+        </div>
+        <div class="btn">
+            <a href="mailto:kodjomahulolorandolphe@gmail.com" target="_blank">Email</a>
+        </div>
+        <div class="btn">
+            <a href="https://www.facebook.com/profile.php?id=100049637839098" target="_blank">Facebook</a>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <p>© 2023 Randolphe KM. Tous droits réservés.</p>
+    <p>Téléphone : +22957703972 | Email : kodjomahulolorandolphe@gmail.com</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Change header background on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      } else {
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      }
+    });
+
+    // Add animation to services on scroll
+    const serviceItems = document.querySelectorAll('.service-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 1s ease';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    serviceItems.forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+</body></html>

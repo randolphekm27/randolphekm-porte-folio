@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page à propos de Randolphe KM, spécialiste en contenu digital et développement web. Découvrez mon parcours et mes services.">
+    <meta name="keywords" content="Randolphe KM, contenu digital, développement web, freelance, expertise">
+    <title>À Propos de Randolphe KM</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #9b59b6;
+            --background-color: #1a1a1a;
+            --text-color: #ffffff;
+            --hover-color: #2980b9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%; /* Ajuste la largeur selon l'espace désiré */
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a , footer a{
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('R.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .btn , .btn a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease 0.4s;
+            animation-fill-mode: both;
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: var(--hover-color);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        /* Style pour la section de contact */
+        #contact {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Randolphe KM</div>
+            <ul class="nav-links">
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="portefolio.html#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur mon site</h1>
+            <p>Bienvenue sur ma page ! Je suis Randolphe KM, passionné par la création de contenu et IA. Avec déja de 3 ans d'expérience en rédaction et en développement web, je m'efforce d'aider mes lecteurs et clients à naviguer dans le monde numérique avec des informations claires, pratiques et inspirantes.</p>            
+            <a class="btn" href="portefolio.html#projets">Mes Projets</a>
+            <a href="#contact" class="btn" >Me Contacter</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis un rédacteur de contenu chevronné et un développeur web spécialisé en IA. Mon objectif est de rendre les sujets complexes accessibles et intéressants pour tous. Que vous soyez un entrepreneur en herbe, un professionnel du marketing ou simplement curieux des dernières tendances, vous trouverez ici des conseils pratiques et des idées innovantes pour réussir dans le monde en ligne.</p>
+
+        <h2>Ce que je fais</h2>
+        <p>Je crée du contenu engageant et informatif sur des sujets variés tels que la monétisation TikTok, la gestion de pages Facebook, les astuces pour les produits digitaux, et bien plus encore. Mon approche est basée sur des techniques éprouvées et des pratiques efficaces, présentées de manière simple et directe pour que vous puissiez les appliquer facilement.</p>
+
+        <h2>Pourquoi me suivre ?</h2>
+        <p>Si vous cherchez des conseils concrets pour améliorer votre présence en ligne ou pour démarrer un projet numérique, vous êtes au bon endroit. Je partage des techniques et des astuces que j'ai perfectionnées au fil des années, avec l'objectif de vous aider à atteindre vos objectifs plus rapidement et plus efficacement. Vous découvrirez des informations précieuses qui peuvent faire la différence dans votre stratégie en ligne.</p>
+
+        <h2>Comment me contacter ?</h2>
+        <p>Si vous avez des questions ou si vous souhaitez en savoir plus sur mes services, n'hésitez pas à me contacter. Vous pouvez me trouver sur mes réseaux sociaux ou m'envoyer un email. Je serai ravi d'échanger avec vous et de vous aider dans vos projets.</p>
+    </section>
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <div id="contactOptions">
+            <div class="btn" >
+                <a href="https://wa.me/+22957703972" target="_blank">WhatsApp</a>
+            </div>
+            <div class="btn">
+                <a href="mailto:kodjomahulolorandolphe@gmail.com" target="_blank">Email</a>
+            </div>
+            <div class="btn">
+                <a href="https://www.facebook.com/profile.php?id=100049637839098" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Randolphe KM. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
